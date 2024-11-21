@@ -32,7 +32,7 @@ This repository provides a **Data Virtualization API Template** using the RAW pl
 
 The RAW platform allows you to create APIs by writing SQL queries that can access and combine data from various data sources. In this template, we simulate multiple backend systems using the `VALUES` clause in SQL to create inline tables with hardcoded data. The endpoints accept optional query parameters, which are injected into the SQL queries using the `:<variable_name>` notation, as per the RAW platform's convention.
 
-**Key Point:** The `/inventory/stock` endpoint exemplifies data virtualization by combining data from the Product Catalog System and the Inventory Management System into a single, unified response.
+**Key Point:** The `/inventory/stock` endpoint exemplifies data virtualization by combining data from the **mocked** Product Catalog System and the **mocked** Inventory Management System into a single, unified response. These systems are simulated using hardcoded data to mimic real backend systems. If you'd like to explore another mock API use case, please check out the [RAW Mock API Template](https://github.com/raw-labs/raw-mock-api).
 
 ### Features
 
@@ -41,9 +41,43 @@ The RAW platform allows you to create APIs by writing SQL queries that can acces
 - **Dynamic Querying**: Supports optional query parameters to filter and retrieve specific data.
 - **Template Structure**: Offers a foundation to build and customize your own data virtualization APIs.
 
+Certainly! Here's the updated **Getting Started** section that explains the two ways to deploy and use the API:
+
+---
+
 ## Getting Started
 
-_yet to be defined..._
+You have two options to deploy and explore the Data Virtualization API Template:
+
+### Option 1: Deploy via the "Get Started" Button
+
+1. **Deploy the API:**
+   - Visit the [Data Virtualization Starter Template](https://www.raw-labs.com/templates/data-virtualization-starter).
+   - Click the **"Get Started"** button to deploy the template.
+   - If you don’t have a RAW account, you’ll be prompted to create one for free. Deployment and account setup are seamless—just one click away!
+
+2. **Explore the API:**
+   - Access your API immediately inside the RAW application.
+   - View endpoint details and invoke them directly to see how they function.
+
+3. **Customize as Needed:**
+   - Modify the API to suit your requirements.
+   - Once you’re satisfied, re-publish the changes to make your new API available instantly.
+
+### Option 2: Import the GitHub Repository (Business Plan Required)
+
+1. **Prerequisites:**
+   - A RAW account with a **Business Plan** subscription to access the GitHub integration feature.
+
+2. **Import the Repository:**
+   - Follow the instructions in the [RAW GitHub Integration Documentation](https://docs.raw-labs.com/docs/github/) to link your GitHub account.
+   - Import this GitHub repository into your RAW workspace.
+
+3. **Explore and Customize:**
+   - Review the SQL files and endpoints in your RAW workspace.
+   - Make any desired modifications to the API.
+
+---
 
 ## Domain Entities
 

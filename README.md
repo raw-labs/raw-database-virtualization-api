@@ -50,7 +50,7 @@ The entity relationships are the following:
 
 ## Endpoints
 
-### GET `/catalog/products`
+### 1. GET `/catalog/products`
 
 - **Description**: Returns a list of products with their names, descriptions, and prices. Supports an optional `product_id` parameter to filter by product.
 - **Query Parameters**:
